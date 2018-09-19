@@ -68,5 +68,12 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+   <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>http://nexus.zcc.zenvia.com/repository/maven-snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
+
 
 </project>
