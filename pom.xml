@@ -66,46 +66,6 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
-
-		<plugin>
-   <groupId>org.apache.maven.plugins</groupId>
-   <artifactId>maven-deploy-plugin</artifactId>
-   <version>${maven-deploy-plugin.version}</version>
-   <configuration>
-      <skip>true</skip>
-   </configuration>
-</plugin>
-
-<plugin>
-   <groupId>org.sonatype.plugins</groupId>
-   <artifactId>nexus-staging-maven-plugin</artifactId>
-   <version>1.5.1</version>
-   <executions>
-      <execution>
-         <id>default-deploy</id>
-         <phase>deploy</phase>
-         <goals>
-            <goal>deploy</goal>
-         </goals>
-      </execution>
-   </executions>
-   <configuration>
-      <serverId>Nexus</serverId>
-      <nexusUrl>http://nexus.zcc.zenvia.com/</nexusUrl>
-      <skipStaging>true</skipStaging>
-   </configuration>
-</plugin>
-
 	</build>
-
-
-
-	<distributionManagement>
-   <snapshotRepository>
-      <id>maven-snapshots</id>
-      <url>http://nexus.zcc.zenvia.com/repository/maven-snapshots/</url>
-   </snapshotRepository>
-</distributionManagement>
-
 
 </project>
